@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    height: 100%;
+  }
+  
+  .app-sidenav-content {
+    display: flex;
+    height: 100%;
+    /* background-color: #1E88E5; */
+  }
+  
+  .app-sidenav {
+    padding: 20px;
+    
+    box-shadow: 3px 3px 7px 0px rgba(148,148,148,1);
+    border-radius: 0;
+  }
+  .app-sidenav h3{
+    color: #635BFF;
+    font-weight: 700;
+  }
+  
