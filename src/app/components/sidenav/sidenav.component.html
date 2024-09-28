@@ -4,12 +4,22 @@
         [opened]="!isScreenSmall"
     >
         <h3>Risskov Tekniks</h3>
+        <mat-nav-list>
+            <mat-list-item>
+              <a  routerLink="/dashboard">Dashboard</a>
+            </mat-list-item>
+            <mat-list-item>
+              <a  routerLink="/list" >List</a>
+            </mat-list-item>
+          </mat-nav-list>
     </mat-drawer>
 
-    <div class="app-sidenav-content">
+    <div class="app-sidenav-content" >
         <div>
             <app-toolbar (toggleSideNav)="drawer.toggle()"></app-toolbar>
+            <router-outlet></router-outlet>
         </div>
+        
     </div>
 
 </mat-drawer-container>

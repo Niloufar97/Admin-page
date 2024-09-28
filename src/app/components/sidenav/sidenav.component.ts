@@ -4,11 +4,14 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { ToolbarComponent } from "../toolbar/toolbar.component";
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { MatListModule } from '@angular/material/list';
+import { RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [MatButtonModule, MatSidenavModule, ToolbarComponent],
+  imports: [MatButtonModule, MatSidenavModule, ToolbarComponent, MatListModule, RouterOutlet, RouterLink],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css'
 })
@@ -19,6 +22,9 @@ export class SidenavComponent implements OnInit{
 
   toggleDrawer(): void {
     this.drawer.toggle();
+  }
+  closeSideNav(): void{
+    this.drawer.close();
   }
 
   private breakpointObserver = inject(BreakpointObserver)
