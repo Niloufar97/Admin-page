@@ -2,7 +2,7 @@
     background-color: white;
     border-radius: 1rem;
     padding: 2rem;
-    width: 90%;  /* Default width for small screens */
+    width: 100%;  /* Default width for small screens */
   }
   
   canvas {
@@ -30,7 +30,7 @@
   
   @media (min-width: 769px) and (max-width: 1024px) {
     .container {
-      width: 85%;  /* Increase container width */
+      width: 75%;  /* Increase container width */
     }
     canvas {
       height: 400px;  /* Increase canvas height */
@@ -39,7 +39,7 @@
   
   @media (min-width: 1025px) and (max-width: 1440px) {
     .container {
-      width: 85%;  /* Full width for larger screens */
+      width: 80%;  /* Full width for larger screens */
     }
     canvas {
       height: 500px;  /* Even larger canvas height */
@@ -48,7 +48,7 @@
   
   @media (min-width: 1441px) {
     .container {
-      width: 90%;  /* Full width on extra large screens */
+      width: 100%;  /* Full width on extra large screens */
     }
     canvas {
       height: 600px !important;  /* Maximum height for very large screens */

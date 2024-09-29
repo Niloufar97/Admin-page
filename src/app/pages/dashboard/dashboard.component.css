@@ -1,0 +1,11 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chart-container{
+    padding: 0 auto;
+    align-items: center;
+    width: 65%;
+}
