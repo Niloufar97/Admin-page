@@ -1,25 +1,24 @@
 <mat-drawer-container class="container" autosize>
-    <mat-drawer #drawer class="app-sidenav" 
-        [mode]="isScreenSmall? 'over': 'side' "
-        [opened]="!isScreenSmall"
-    >
-        <h3>Risskov Tekniks</h3>
-        <mat-nav-list>
-            <mat-list-item>
-              <a  routerLink="/dashboard">Dashboard</a>
-            </mat-list-item>
-            <mat-list-item>
-              <a  routerLink="/list" >List</a>
-            </mat-list-item>
-          </mat-nav-list>
-    </mat-drawer>
+  <mat-drawer #drawer class="app-sidenav" [mode]="isScreenSmall ? 'over' : 'side'" [opened]="!isScreenSmall">
+    <h3>Risskov Tekniks</h3>
+    <mat-nav-list class="mat-nav-list">
+      <mat-list-item class="mat-nav-item" [routerLink]="['/']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Dashboard
+      </mat-list-item>
+      <mat-list-item class="mat-nav-item" [routerLink]="['/list']" routerLinkActive="active">
+        List
+      </mat-list-item>
+      <mat-list-item class="mat-nav-item" [routerLink]="['/form']" routerLinkActive="active">
+        Forms
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
 
-    <div class="app-sidenav-content" >
-        <div>
-            <app-toolbar (toggleSideNav)="drawer.toggle()"></app-toolbar>
-            <router-outlet></router-outlet>
-        </div>
-        
+  <div class="app-sidenav-content">
+    <app-toolbar (toggleSideNav)="drawer.toggle()"></app-toolbar>
+    <div class="wrapper">
+      <router-outlet></router-outlet>
     </div>
-
+  </div>
 </mat-drawer-container>

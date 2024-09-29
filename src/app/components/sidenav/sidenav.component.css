@@ -7,10 +7,10 @@
   
   .app-sidenav-content {
     display: flex;
+    flex-direction: column;
     height: 100%;
-    /* background-color: #1E88E5; */
-  }
-  
+    margin: 1rem;
+  } 
   .app-sidenav {
     padding: 20px;
     
@@ -20,5 +20,22 @@
   .app-sidenav h3{
     color: #635BFF;
     font-weight: 700;
+  }
+  .mat-nav-list{
+    margin-top: 1.5rem;
+  }
+  .mat-nav-item{
+    margin: 0.5rem 0;
+  }
+  .mat-nav-item.active {
+    background-color: #635BFF; 
+  }
+  .wrapper{
+    width: 100%;
+    min-height: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   

@@ -5,13 +5,13 @@ import { ToolbarComponent } from "../toolbar/toolbar.component";
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
-import { RouterOutlet } from '@angular/router';
+import { RouterLinkActive, RouterOutlet } from '@angular/router';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [MatButtonModule, MatSidenavModule, ToolbarComponent, MatListModule, RouterOutlet, RouterLink],
+  imports: [MatButtonModule, MatSidenavModule, ToolbarComponent, MatListModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css'
 })
