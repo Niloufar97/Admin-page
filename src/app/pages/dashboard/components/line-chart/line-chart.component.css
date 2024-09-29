@@ -1,0 +1,57 @@
+.container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;  /* Default width for small screens */
+  }
+  
+  canvas {
+    width: 100% !important;  /* Ensure the canvas takes the full width of the container */
+    height: 400px !important; /* Default height */
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 65%;  /* Increase container width */
+    }
+    canvas {
+      height: 300px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 80%;  /* Increase container width */
+    }
+    canvas {
+      height: 350px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      width: 85%;  /* Increase container width */
+    }
+    canvas {
+      height: 400px;  /* Increase canvas height */
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+      width: 85%;  /* Full width for larger screens */
+    }
+    canvas {
+      height: 500px;  /* Even larger canvas height */
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .container {
+      width: 90%;  /* Full width on extra large screens */
+    }
+    canvas {
+      height: 600px !important;  /* Maximum height for very large screens */
+    }
+  }
+  

@@ -29,8 +29,14 @@ export class SidenavComponent implements OnInit{
 
   private breakpointObserver = inject(BreakpointObserver)
   ngOnInit(): void {
-    this.breakpointObserver.observe([`max-width : 720px`]).subscribe((state: BreakpointState) => {
-     this.isScreenSmall = state.matches
-    })
+    this.breakpointObserver.observe([`(max-width: 720px)`]).subscribe((state: BreakpointState) => {
+      this.isScreenSmall = state.matches;
+
+      if (this.isScreenSmall) {
+        this.drawer.close(); 
+      } else {
+        this.drawer.open(); 
+      }
+    });
   }
 }
