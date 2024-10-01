@@ -1,0 +1,33 @@
+.box {
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem;
+    flex-wrap: wrap; 
+}
+
+table {
+    width: 100%;
+    padding: 0; 
+}
+
+.mat-column-id,
+.mat-column-firstName,
+.mat-column-lastName,
+.mat-column-email,
+.mat-column-address {
+    padding-right: 60px; 
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    table {
+        overflow-x: scroll; 
+    }
+}
