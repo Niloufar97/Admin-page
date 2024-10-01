@@ -1,9 +1,9 @@
 <div class="box">
-    <input type="text" placeholder="Search users" (input)="applyFilter($event)" />
-    <button mat-raised-button color="primary" >Add user</button>
+    <input type="text" placeholder="Search users" class="search-input" (input)="applyFilter($event)" />
+    <button mat-raised-button color="primary" >Add User</button>
 </div>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> ID </th>
         <td mat-cell *matCellDef="let user"> {{user.id}} </td>
@@ -29,9 +29,17 @@
         <td mat-cell *matCellDef="let user"> {{user.address}} </td>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="['id', 'firstName', 'lastName', 'email', 'address']"></tr>
-    <tr mat-row *matRowDef="let row; columns: ['id', 'firstName', 'lastName', 'email', 'address'];"></tr>
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell *matCellDef="let user">
+            <button mat-icon-button color="warn" (click)="deleteUser(user.id)">
+                <mat-icon>delete_outline</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['id', 'firstName', 'lastName', 'email', 'address', 'action']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['id', 'firstName', 'lastName', 'email', 'address', 'action'];"></tr>
 </table>
 
-<mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" class="mat-elevation-z8">
-</mat-paginator>
+<mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" class="mat-elevation-z8"></mat-paginator>

@@ -20,6 +20,15 @@ table {
 .mat-column-address {
     padding-right: 60px; 
 }
+.search-input{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
+.search-input:focus{
+    outline: none; 
+    border-color: #007bff;
+}
 
 @media (max-width: 600px) {
     .box {
