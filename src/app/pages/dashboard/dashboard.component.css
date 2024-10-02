@@ -1,11 +1,38 @@
-.dashboard-container{
+.dashboard-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-section {
+    display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.chart-text-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+    
+}
+
+.chart-container,
+.text-container {
+    flex: 1;
+    
 }
 .chart-container{
-    padding: 0 auto;
-    align-items: center;
-    width: 65%;
+    width: 60%;
+}
+.text-container{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .chart-text-section {
+        flex-direction: column;
+    }
 }

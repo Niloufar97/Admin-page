@@ -1,1 +1,6 @@
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta doloribus qui mollitia vero aliquid quo nisi impedit error odio ut earum exercitationem illum esse, non dolor vitae magnam, doloremque consequuntur?</p>
+<div class="card-grid">
+    <mat-card *ngFor="let card of cards" class="example-card">
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-content>{{card.content}}</mat-card-content>
+    </mat-card>
+  </div>
