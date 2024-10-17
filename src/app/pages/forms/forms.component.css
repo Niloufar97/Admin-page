@@ -1,0 +1,50 @@
+.forms-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 1rem auto;
+    padding: 3rem;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    width: 100%;
+  }
+
+  .form-section h2{
+    background: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  @media (max-width: 575.98px) {
+    .forms-container{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .forms-container{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .forms-container{
+      gap: 1rem;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+
+   
+  }
+  
+  @media (min-width: 1200px) {
+    
+  }
+  

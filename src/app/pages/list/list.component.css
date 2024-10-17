@@ -34,13 +34,11 @@ table {
 
 @media (max-width: 900px) {
     .box {
-        justify-content: center;
-        gap: 1rem;
+        justify-content: space-around;
     }
 
     table {
-
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 
     .mat-column-id,
