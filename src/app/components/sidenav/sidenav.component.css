@@ -10,10 +10,10 @@
     flex-direction: column;
     height: 100%;
     background-color: #f4f7fb;
+    overflow-y: hidden;
   } 
   .app-sidenav {
     padding: 20px;
-    
     box-shadow: 3px 3px 7px 0px rgba(148,148,148,1);
     border-radius: 0;
   }
@@ -31,15 +31,15 @@
     background-color: #635BFF; 
   }
   .wrapper{
-    width: 98%;
+    width: 90%;
     min-height: 100%;
-    margin: 1rem;
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   @media screen and (max-width:720px) {
     .app-sidenav{
-      width: 20px;
+      width: 250px;
     }
   }

@@ -13,9 +13,9 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class CardsComponent {
   cards = [
-    { title: 'Card 1', content: 'Content of card 1' },
-    { title: 'Card 2', content: 'Content of card 2' },
-    { title: 'Card 3', content: 'Content of card 3' },
-    { title: 'Card 4', content: 'Content of card 4' },
+    { title: '16,689', content: 'Budget', background: '#f0efff', icon: 'attach_money', icon_color: '#635bff'},
+    { title: '148', content: 'Return', background: '#fefaea', icon: 'assignment_return', icon_color: '#f8c20a'},
+    { title: '$156K', content: 'Orders', background: '#e7faf9', icon: 'shopping_basket', icon_color: '#16cdc7'},
+    { title: '64', content: 'Total Items', background: '#fff1f5', icon: 'refresh', icon_color: '#ff6692'},
   ];
 }

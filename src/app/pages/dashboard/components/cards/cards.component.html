@@ -1,7 +1,10 @@
 <div class="card-grid">
-    <mat-card *ngFor="let card of cards" class="example-card">
-      <mat-card-title>{{card.title}}</mat-card-title>
+    <mat-card *ngFor="let card of cards" class="card" [ngStyle]="{'background-color': card.background}">
+      <button mat-mini-fab aria-label="Example icon button with a menu icon" [ngStyle]="{'background-color': card.icon_color}">
+        <mat-icon>{{card.icon}}</mat-icon>
+      </button>
       <mat-card-content>{{card.content}}</mat-card-content>
-      <button mat-stroked-button>view details</button>
+      <mat-card-title class="card-title">{{card.title}}</mat-card-title>
+      <button class="details-btn">view details</button>
     </mat-card>
   </div>

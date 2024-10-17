@@ -35,6 +35,18 @@ export class LineChartComponent implements OnInit {
       legend: {
         display: false,
       },
+      title: {
+        display: true,
+        text: 'Monthly Sales Data',
+        font: {
+          size: 18, 
+          weight: 'bold'
+        },
+        color: '#333',
+        padding: {
+          bottom: 30
+        }
+      }
     }
   };
 
