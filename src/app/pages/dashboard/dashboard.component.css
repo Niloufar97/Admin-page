@@ -1,11 +1,71 @@
-.dashboard-container{
+.dashboard-container {
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+    padding: 20px;
+}
+
+.card-section {
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
-.chart-container{
-    padding: 0 auto;
-    align-items: center;
-    width: 65%;
+
+.chart-text-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+    width: 100%;
+    
 }
+.chart-container {
+    flex: 1;
+    min-width: 50%;
+}
+
+.text-container {
+    flex: 1;
+}
+@media (max-width: 575.98px) {
+    .chart-text-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .chart-container {
+        width: 80%;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .chart-text-section {
+        flex-direction: column;
+    }
+    .chart-container {
+        width: 80%;
+    }.text-container {
+        width: 80%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .chart-text-section {
+        flex-direction: column;
+    }
+    .chart-container {
+        max-width: 80%; 
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .chart-container {
+        width: 90%;
+    }
+   
+  }
+  
+  @media (min-width: 1200px) {
+    /* Your styles here */
+  }
+  

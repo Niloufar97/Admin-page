@@ -1,1 +1,10 @@
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta doloribus qui mollitia vero aliquid quo nisi impedit error odio ut earum exercitationem illum esse, non dolor vitae magnam, doloremque consequuntur?</p>
+<div class="card-grid">
+    <mat-card *ngFor="let card of cards" class="card" [ngStyle]="{'background-color': card.background}">
+      <button mat-mini-fab aria-label="Example icon button with a menu icon" [ngStyle]="{'background-color': card.icon_color}">
+        <mat-icon>{{card.icon}}</mat-icon>
+      </button>
+      <mat-card-content>{{card.content}}</mat-card-content>
+      <mat-card-title class="card-title">{{card.title}}</mat-card-title>
+      <button class="details-btn">view details</button>
+    </mat-card>
+  </div>
