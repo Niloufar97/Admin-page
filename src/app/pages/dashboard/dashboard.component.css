@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 5rem;
     padding: 20px;
+   
 }
 
 .card-section {
@@ -20,13 +21,12 @@
 }
 .chart-container {
     flex: 1;
-    min-width: 500px; /* Set a fixed minimum width */
-    max-width: 600px; /* Set a fixed maximum width */
+    min-width: 500px; 
+    max-width: 600px; 
 }
 
 .text-container {
-    width: 400px; /* Fixed width for the text container */
-    flex: 1;
+    width: 400px; 
     background-color: white;
     padding: 20px;
     border-radius: 1rem;
