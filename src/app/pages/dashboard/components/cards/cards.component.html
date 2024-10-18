@@ -1,5 +1,5 @@
 <div class="card-grid">
-    <mat-card *ngFor="let card of cards" class="card" [ngStyle]="{'background-color': card.background}">
+    <mat-card *ngFor="let card of cards" class="card" [ngStyle]="{'background': 'linear-gradient(180deg, ' + card.backgroundStart + ', ' + card.backgroundEnd + ')'}">
       <button mat-mini-fab [ngStyle]="{'background-color': card.icon_color} " class="icon-container">
         <mat-icon  class="mat-icon">{{card.icon}}</mat-icon>
       </button>

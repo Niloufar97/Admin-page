@@ -37,7 +37,7 @@ export class RadarChartComponent implements OnDestroy {
     datasets: [
       { data: [65, 59, 90, 81, 56, 55, 40], label: '2022' },
       { data: [28, 48, 40, 19, 96, 27, 100], label: '2023' },
-      { data: [75, 68, 60, 13, 75, 20, 80], label: '2024' },
+      { data: [75, 68, 60, 57, 75, 83, 80], label: '2024' },
     ],
   };
   public radarChartType: ChartType = 'radar';

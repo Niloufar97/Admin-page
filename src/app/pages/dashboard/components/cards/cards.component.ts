@@ -13,9 +13,10 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class CardsComponent {
   cards = [
-    { title: '16,689', content: 'Budget', background: '#f0efff', icon: 'attach_money', icon_color: '#635bff'},
-    { title: '148', content: 'Return', background: '#fefaea', icon: 'assignment_return', icon_color: '#f8c20a'},
-    { title: '$156K', content: 'Orders', background: '#e7faf9', icon: 'shopping_basket', icon_color: '#16cdc7'},
-    { title: '64', content: 'Total Items', background: '#fff1f5', icon: 'refresh', icon_color: '#ff6692'},
+    { title: '16,689', content: 'Budget', backgroundStart: '#ecebff', backgroundEnd: '#f4f7fb', icon: 'attach_money', icon_color: '#635bff'},
+    { title: '148', content: 'Return', backgroundStart: '#fef7e1',  backgroundEnd: '#fefdf9', icon: 'assignment_return', icon_color: '#f8c20a'},
+    { title: '$156K', content: 'Orders', backgroundStart: '#e2f8f8', backgroundEnd: '#f6fdfd', icon: 'shopping_basket', icon_color: '#16cdc7'},
+    { title: '64', content: 'Total Items', backgroundStart: '#ffecf2', backgroundEnd: '#fff9fb', icon: 'refresh', icon_color: '#ff6692'},
+    { title: '$36,715', content: 'Total Income', backgroundStart: '#e6f8ed', backgroundEnd: '#fafdfc', icon: 'extension', icon_color: '#4fce7e'},
   ];
 }
