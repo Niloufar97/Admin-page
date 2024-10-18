@@ -16,6 +16,10 @@ export class RadarChartComponent implements OnDestroy {
   public radarChartOptions: ChartConfiguration['options'] = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 1500,
+      easing: 'easeInOutQuart'
+    },
   };
 
   public radarChartLabels: string[] = [
