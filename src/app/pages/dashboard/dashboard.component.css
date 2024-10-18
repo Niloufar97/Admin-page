@@ -20,11 +20,19 @@
 }
 .chart-container {
     flex: 1;
-    min-width: 50%;
+    min-width: 500px; /* Set a fixed minimum width */
+    max-width: 600px; /* Set a fixed maximum width */
 }
 
 .text-container {
+    width: 400px; /* Fixed width for the text container */
     flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1rem;
+}
+.radar-chart-container{
+    margin: 1rem auto;
 }
 @media (max-width: 575.98px) {
     .chart-text-section {
@@ -34,38 +42,60 @@
         gap: 5rem;
     }
     .chart-container {
-        width: 80%;
+        width: 85%;
+        max-width: 350px; 
     }
-  }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) {
+    .text-container {
+        width: 85%;
+        max-width: 350px; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
     .chart-text-section {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
     }
     .chart-container {
         width: 80%;
-    }.text-container {
-        width: 80%;
+        max-width: 400px;
     }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991.98px) {
+    .text-container {
+        width: 80%;
+        max-width: 400px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
     .chart-text-section {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
     }
     .chart-container {
-        max-width: 80%; 
+        width: 70%;
+        max-width: 500px; 
     }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .text-container {
+        width: 70%;
+        max-width: 500px; 
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .chart-container {
         width: 90%;
+        max-width: 600px; 
     }
+    .text-container {
+        width: 90%;
+        max-width: 600px; 
+    }
+}
+
+@media (min-width: 1200px) {
    
-  }
-  
-  @media (min-width: 1200px) {
-    /* Your styles here */
-  }
-  
+}
