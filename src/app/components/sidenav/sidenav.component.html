@@ -4,13 +4,22 @@
     <mat-nav-list class="mat-nav-list">
       <mat-list-item class="mat-nav-item" [routerLink]="['/']" routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }">
-        Dashboard
+        <div class="item-content">
+          <mat-icon>dashboard</mat-icon>
+          <span>Dashboard</span>
+        </div>
       </mat-list-item>
       <mat-list-item class="mat-nav-item" [routerLink]="['/list']" routerLinkActive="active">
-        List
+        <div class="item-content">
+          <mat-icon>view_list</mat-icon>
+          <span>List</span>
+        </div>
       </mat-list-item>
       <mat-list-item class="mat-nav-item" [routerLink]="['/form']" routerLinkActive="active">
-        Forms
+        <div class="item-content">
+          <mat-icon> table_chart</mat-icon>
+          <span>Forms</span>
+        </div>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>

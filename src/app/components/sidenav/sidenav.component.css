@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #f4f7fb;
+  background-color: #eaf0f7;
   overflow-y: hidden;
   position: relative;
 }
@@ -20,7 +20,6 @@ app-toolbar {
 }
 .app-sidenav {
   padding: 20px;
-  box-shadow: 3px 3px 7px 0px rgba(148, 148, 148, 1);
   border-radius: 0;
 }
 
@@ -34,7 +33,22 @@ app-toolbar {
 }
 
 .mat-nav-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   margin: 0.5rem 0;
+  padding: 1rem;
+}
+
+.mat-nav-item .item-content {
+  display: flex;
+  align-items: center; 
+}
+
+.item-content mat-icon {
+  margin-right: 8px; 
+  font-size: 20px;
+  
 }
 
 .mat-nav-item.active {
