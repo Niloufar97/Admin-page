@@ -9,7 +9,7 @@ import { BaseChartDirective } from 'ng2-charts';
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css']
 })
-export class LineChartComponent implements OnInit {
+export class LineChartComponent {
   @ViewChild(BaseChartDirective) chart?: BaseChartDirective;
 
   public lineChartData: ChartConfiguration['data'] = {
@@ -51,10 +51,4 @@ export class LineChartComponent implements OnInit {
   };
 
   public lineChartType: ChartType = 'line';
-
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.chart?.update();
-    }, 100)
-  }
 }
